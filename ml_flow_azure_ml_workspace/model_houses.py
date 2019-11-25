@@ -31,9 +31,7 @@ def eval_metrics(actual, pred):
     r2 = r2_score(actual, pred)
     return rmse, mae, r2
 
-os.chdir("C:/Users/Julie.Vranken/Desktop/Data Science/MLflow_Houses")  
 ws = Workspace.from_config()
-
 mlflow.set_tracking_uri(ws.get_mlflow_tracking_uri())
 experiment_name = 'experiment_mlflow_Houses'
 mlflow.set_experiment(experiment_name)
