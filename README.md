@@ -16,7 +16,7 @@ De data die gebruikt wordt om dit model te trainen kan je terugvinden in 'Train.
 
 ## The model
 
-De python code voor het trainen van het model en het tracken van de parameters en/of metrieken van de bijhorende runs kan je terugvinden in de model.py file in beide directories. 
+De python code voor het trainen van het model en het tracken van de parameters en/of metrieken van de bijhorende runs kan je terugvinden in de model_houses.py file in beide directories. 
 
 Merk op dat afhankelijk van de gekozen toepassing (ml_flow_ml_workspace of ml_flow_azure_vm), deze code lichtjes zal verschillen, aangezien de runs naar een andere plaats geschreven worden (dit is duidelijk aangegeven in de bijhorend README). 
 
