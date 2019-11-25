@@ -36,7 +36,6 @@ def eval_metrics(actual, pred):
     r2 = r2_score(actual, pred)
     return rmse, mae, r2
 
-os.chdir("C:/Users/Julie.Vranken/Desktop/Data Science/MLflow_Houses") 
 mlflow.tracking.set_tracking_uri("http://52.137.9.17:5000")
 
 
