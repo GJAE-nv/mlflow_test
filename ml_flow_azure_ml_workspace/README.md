@@ -1,6 +1,3 @@
-
-# Algemeen
-
 Allereest dient er een Azure Machine Learning Workspace aangemaakt worden in Azure. Indien je deze creërt, wordt er automatisch een BLOB Storage aangemaakt waarin de artifacts van uitgevoerde runs worden bijgehouden. 
 
 # Train et model en register parameters/metrieken van de correspondere runs
