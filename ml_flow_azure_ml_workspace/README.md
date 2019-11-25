@@ -85,7 +85,7 @@ Daarna cleanen we onze data, trainen we het model en zetten we default waardes v
     alpha = float(sys.argv[1]) if len(sys.argv) > 1 else 0.5
     l1_ratio = float(sys.argv[2]) if len(sys.argv) > 2 else 0.5
 ```
-Tot slot storten we een MLflow run en schrijven we bijhorende parameters/metrieken & artifacts weg naar de Azure ML worspace. Merk op dat in deze variant (in tegenstelling tot de VM variant, beschreven in ml_flow_azure_vm), het enkel nut heeft om de 'log_metric' (en niet ook log_param) functie te gebruiken aangezien enkel variabelen gelogd op deze manier gevisualeerd zullen worden in de Azure ML front-end. Indien je gedefineerde parameters dus wil registeren moet je dit ook doen via deze functie (en niet met een aparte functie log_param). Het nadeel hiervan is dat we front-end gewijs geen mooi onderscheid kunnen maken tussen beiden. 
+Tot slot starten we een MLflow run en schrijven we bijhorende parameters/metrieken & artifacts weg naar de Azure ML worspace. Merk op dat in deze variant (in tegenstelling tot de VM variant, beschreven in ml_flow_azure_vm), het enkel nut heeft om de 'log_metric' (en niet ook log_param) functie te gebruiken aangezien enkel variabelen gelogd op deze manier gevisualeerd zullen worden in de Azure ML front-end. Indien je gedefineerde parameters dus wil registeren moet je dit ook doen via deze functie (en niet met een aparte functie log_param). Het nadeel hiervan is dat we front-end gewijs geen mooi onderscheid kunnen maken tussen beiden. 
 
 ```
    with mlflow.start_run():
