@@ -130,4 +130,3 @@ if __name__ == "__main__":
         
         mlflow.log_artifact("Houses_Model.py")
 
-HTTPConnectionPool(host='40.71.86.251', port=5000): Max retries
