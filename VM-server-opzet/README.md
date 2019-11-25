@@ -12,8 +12,8 @@ Microsoft Datacenter 2019: B2ms, Standard, General purpose, CPU 2, RAM 8, Datadi
 ## 3. Once connection is done and you're on de Desktop of the server do the following:
 - install python: go to internet explorer https://www.python.org/downloads/release/
 - open up command line in server and type the following to install pip: 
-```> curl https://bootstrap.pypa.io/get-pip.py -o get-pip.py
-   > python get-pip.py```
+```> curl https://bootstrap.pypa.io/get-pip.py -o get-pip.py```
+```> python get-pip.py```
 - install mlflow using pip
 ```> pip install mlflow```
 
