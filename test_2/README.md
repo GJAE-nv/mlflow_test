@@ -1,3 +1,5 @@
+# ML flow and Azure Machine Learning Workspace 
+
 In de map test_2 heb je een model.py file en een artifacts folder waar je de conda.yaml, MLmodel en model.pkl terugvindt. Deze laatste drie zijn dus de files die mlflow voor ons aanmaakt. Het zou mooi zijn als we die gewoon op Azure kunnen laten staan en niet lokaal moeten halen om dit te doen, maar dat wou nog niet lukken. 
 
 In model.py begin je met enkele constanten te definieren die info bevatten over de workspace op azure etc. Dit is eigenlijk hetzelfde als de config file die we voordien gebruikte:
