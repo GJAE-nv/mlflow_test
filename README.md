@@ -1,4 +1,4 @@
-# MLflow on Azure ML workspace & MLflow on Azure Virtual Machine
+# MLflow en Azure
 
 In deze repository kan je informatie terugvinden betreffende het tracken & deployen van een ML model via het open source platform MLflow  op Azure. 
 
@@ -10,11 +10,11 @@ In elke directory is er een README toegevoegd met verdere uitleg over beiden lui
 
 In dit voorbeeld maken we gebruik van een python model om huisprijzen te voorspellen. 
 
-## The data
+## De data
 
 De data die gebruikt wordt om dit model te trainen kan je terugvinden in 'Train.csv'
 
-## The model
+## Het model
 
 De python code voor het trainen van het model en het tracken van de parameters en/of metrieken van de bijhorende runs kan je terugvinden in de model_houses.py file in beide directories. 
 
