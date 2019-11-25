@@ -4,7 +4,7 @@ In deze repository kan je informatie terugvinden betreffende het tracken & deplo
 
 Meer specifiek kan je een handleiding terugvinden betreffende volgende 2 toepassingen:
   - Hoe een connectie maken tussen de MLflow library & een Azure Machine Learning Workspace (ml_flow_azure_ml_workspace)? 
-  - Hoe een mlflow server opzetten op een Azure Virtual Machine (VM) (ml_flow_azure_vm)).?
+  - Hoe een mlflow server opzetten op een Azure Virtual Machine (VM) (ml_flow_azure_vm).?
   
 In elke directory is er een README toegevoegd met verdere uitleg over beiden luiken. 
 
