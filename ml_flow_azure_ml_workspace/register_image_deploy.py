@@ -20,11 +20,6 @@ if __name__ == '__main__':
 
 ############################################################################################
 
-experiment_name = 'experiment_mlflow_Houses'
-exp = ws.experiments[experiment_name]
-runs = list(exp.get_runs())
-# get the run ID and the path in run history
-runid = runs[0].id
 
 import mlflow.azureml
 from azureml.core.webservice import AciWebservice, Webservice
