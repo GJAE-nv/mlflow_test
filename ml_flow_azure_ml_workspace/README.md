@@ -1,6 +1,8 @@
+# Creëer een Azure ML Workspace
+
 Allereest dient er een Azure Machine Learning Workspace aangemaakt worden in Azure. Indien je deze creërt, wordt er automatisch een BLOB Storage aangemaakt waarin de artifacts van uitgevoerde runs worden bijgehouden. 
 
-# Train et model en register parameters/metrieken van de correspondere runs
+# Train het model en register parameters/metrieken van de correspondere runs
 
 In de map ml_flow_azure_ml_workspace kan je de model_houses.py file terugvinden waarin de code beschreven staat om het huisprijzen model te trainen en informatie betreffende uitgevoerde runs weg te schrijven naar de Azure ML Workspace. 
 
