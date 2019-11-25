@@ -10,11 +10,12 @@ The data used for this Machine Learning Model is stored in Train.csv
 ## The model
 The model to predict the House Prices is stored in the Houses_model.py file
 
-## artifact download
+## Artifact download
 In this directory you'll find two python scripts to download the artifacts created by mlflow frm the Azure Blob storage. 
 The artifact_experiment_download.py makes it possible to download only the artifacts for one specific run. You'll need these
 artifacts to create your model in Azure Machine Learning Workspace
 
 Enjoy!
+--------------------------------------------------------------
 Julie & Gertjan 
 
