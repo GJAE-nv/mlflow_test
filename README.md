@@ -1,6 +1,6 @@
 # MLflow on Azure ML workspace and/or Azure Virtal Machine
 
-In the following repository you'll find a way to make a connection between the mlflow library and and Azure Machine Learning Workspace (ml_flow_azure_ml_workspace) & you can find a way to setup a mlflow server on an Azure Virtual Machine (VM_server_setup). In each directory you'll find a README.
+In the following repository you'll find a way to make a connection between the mlflow library and and Azure Machine Learning Workspace (ml_flow_azure_ml_workspace) & you can find a way to setup a mlflow server on an Azure Virtual Machine (ml_flow_azure_vm). In each directory you'll find a README.
 
 In this example we'll use a model to predict Housing Prices
 
