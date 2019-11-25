@@ -1,7 +1,7 @@
 --------------- How to setup MLflow on Virtual Machine ----------------
 
 1. Create a VM on azure with the following specifications:
-	Microsoft Datacenter 2019: B2ms, Standard, General purpose, CPU 2, RAM 8, Datadisks 4, Max Iops 1920, Temp. Storage 16, 
+	Microsoft Datacenter 2019: B2ms, Standard, General purpose, CPU 2, RAM 8, Datadisks 4, Max Iops 1920, Temp. Storage 16
 	!Allow acces to HTTP, HTTPS, SSH and RDP when creating the VM
 	!Remember username and password used for server, you'll need these credentials later
 
