@@ -10,7 +10,7 @@ from azureml.core import Workspace, Model
 
 ws = Workspace.get(name=WORKSPACE_NAME, subscription_id=SUBSCRIPTION_ID, resource_group=RESOURCE_GROUP)
 
-model = Model.register(workspace=ws, model_path="./test_2/artifacts/model.pkl", model_name="house-model-gj")
+model = Model.register(workspace=ws, model_path="./ml_flow_azure_ml_workspace/artifacts/model.pkl", model_name="house-model-gj")
 
 model_path = Model.get_model_path('house-model-gj', _workspace=ws)
 
@@ -30,7 +30,7 @@ import mlflow.azureml
 from azureml.core.webservice import AciWebservice, Webservice
 # Build an Azure ML Container Image for an MLflow model
 azure_image, azure_model = mlflow.azureml.build_image(
-                                 model_uri='./test_2/artifacts/',
+                                 model_uri='./ml_flow_azure_ml_workspace/artifacts/',
                                  workspace=ws,
                                  synchronous=True)
 

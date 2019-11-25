@@ -1,6 +1,6 @@
 # ML flow and Azure Machine Learning Workspace 
 
-In de map test_2 heb je een model.py file en een artifacts folder waar je de conda.yaml, MLmodel en model.pkl terugvindt. Deze laatste drie zijn dus de files die mlflow voor ons aanmaakt. Het zou mooi zijn als we die gewoon op Azure kunnen laten staan en niet lokaal moeten halen om dit te doen, maar dat wou nog niet lukken. 
+In de map ml_flow_azure_ml_workspace heb je een model.py file en een artifacts folder waar je de conda.yaml, MLmodel en model.pkl terugvindt. Deze laatste drie zijn dus de files die mlflow voor ons aanmaakt. Het zou mooi zijn als we die gewoon op Azure kunnen laten staan en niet lokaal moeten halen om dit te doen, maar dat wou nog niet lukken. 
 
 In model.py begin je met enkele constanten te definieren die info bevatten over de workspace op azure etc. Dit is eigenlijk hetzelfde als de config file die we voordien gebruikte:
 
@@ -24,7 +24,7 @@ Hierna ga je je model gaan registreren in de workspace. Dit komt dan mooi in je 
 
 ```
 from azureml.core import Workspace, Model
-model = Model.register(workspace=ws, model_path="./test_2/artifacts/model.pkl", model_name="house-model-gj")
+model = Model.register(workspace=ws, model_path="./ml_flow_azure_ml_workspace/artifacts/model.pkl", model_name="house-model-gj")
 ```
 
 De volgende code lines zijn puur ter bevestiging van of het gelukt is en je wat info terug te geven:
@@ -41,7 +41,7 @@ import mlflow.azureml
 from azureml.core.webservice import AciWebservice, Webservice
 # Build an Azure ML Container Image for an MLflow model
 azure_image, azure_model = mlflow.azureml.build_image(
-                                 model_uri='./test_2/artifacts/',
+                                 model_uri='./ml_flow_azure_ml_workspace/artifacts/',
                                  workspace=ws,
                                  synchronous=True)
 # If your image build failed, you can access build logs at the following URI:
