@@ -33,6 +33,7 @@ Microsoft Datacenter 2019: B2ms, Standard, General purpose, CPU 2, RAM 8, Datadi
 ## 6. Check wether you can access the MLflow UI
 Go to 'http://Public IP-Adress VM/5000' (example: http://52.137.9.17:5000/) url in your browser. 
 
+# Train het model en registreer parameters/metrieken/artifacts van uitgevoerde runs
 
 
 
