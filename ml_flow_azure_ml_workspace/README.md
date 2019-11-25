@@ -111,7 +111,7 @@ Tot slot storten we een MLflow run en schrijven we bijhorende parameters/metriek
         mlflow.log_artifact("Houses_Model.py")
 ```
 
-# Registreer het 'beste' model, creër hiervan een image en deploy dit als API
+# Registreer het 'beste' model, creëer hiervan een image en deploy dit als API
 
 Bij het loggen van de artifacts wordt er in de BLOB storage van de ML workspace een conda.yaml, MLmodel en model.pkl file automatisch door MLflow aangemaakt. Deze folder mmoeten we eerst lokaal halen en kan je terugvinden in de artifacts folder van deze repository. 
 Merk op dat we idealiter deze op Azure kunnen laten staan en niet lokaal moeten halen om dit te doen, maar dat wou nog niet lukken. 
