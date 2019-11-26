@@ -1,37 +1,38 @@
-# How to setup MLflow on Virtual Machine 
+# Hoe MLflow op te zetten op een Virtual Machine 
 
-## 1. Create a VM on azure with the following specifications:
+## 1. Creëer een VM op Azure met de volgende specificaties: 
 Microsoft Datacenter 2019: B2ms, Standard, General purpose, CPU 2, RAM 8, Datadisks 4, Max Iops 1920, Temp. Storage 16
-- Allow acces to HTTP, HTTPS, SSH and RDP when creating the VM
-- Remember username and password used for server, you'll need these credentials later
+- Verleen toegang tot HTTP, HTTPS, SSH and RDP in de configuratie van de VM
+- Onthoud de username & password van de server (deze credentials heb je later nodig)
 
-## 2. Connect to the VM by Starting Microsoft Remote Desktop (you can download this software on mac)
-- Add PC: hostname: Public IP-Adress VM : RDP Port (example: 52.137.9.17:3389)
-- Connect to server (username and password are those used when creating the server)
+## 2. Connecteer met de VM door Microsoft Remote Desktop op te starten (op Windows is dit reeds geïnstalleerd, voor Mac ga je dit eerst nog moeten downloaden)
+- Add PC:
+    - <hostname: Public IP-Adress VM> : <RDP Port> (example: 52.137.9.17:3389)
+- Connecteer met de server (username en password van set-up (stap 1))
 
-## 3. Once connection is done and you're on de Desktop of the server do the following:
-- install python: go to internet explorer https://www.python.org/downloads/release/
-- open up command line in server and type the following to install pip: 
+## 3. Zodra de connectie tot stand gebracht is en je op de remote desktop bent, doorloop de volgende stappen:
+- installeer python: navigeer naar de internet explorer https://www.python.org/downloads/release/
+- open de command line in de server and typ het volgende om pip te installeren: 
 ```> curl https://bootstrap.pypa.io/get-pip.py -o get-pip.py```
 ```> python get-pip.py```
-- install mlflow using pip
+- installeer mlflow m.b.v. pip
 ```> pip install mlflow```
 
-- start mlflow server on VM
+- start de mlflow server op VM
 ```> mlflow server host 0.0.0.0```
 
 !mlflow server is now running on port 5000 on your VM.
 
-## 4. Adjust firewall settings on VM
-- Navigate to the following directory: Control Panel\System and Security\Windows Defender Firewall
-- Go to Advanced Settings -> Inbound Rules
-- Add new Inbound Rule: Port -> TCP -> specific local ports: 5000 (or all) -> ... 
+## 4. Pas de firewall settings aan op de VM
+- Navigeer naar de volgende directory: Control Panel\System and Security\Windows Defender Firewall
+- Ga naar Advanced Settings -> Inbound Rules
+- Voeg een nieuwe Inbound Rule toe: Port -> TCP -> specific local ports: 5000 (or all) -> ... 
 
-## 5. Go to Azure VM portal and add a Inbound port
-- Add inbound port rule and use port 5000. Allow access 'any'
+## 5. Navigeer naar de Azure VM portal en voeg een Inbound port toe
+- Voeg een inbound port toe en gebruik hiervoor port 5000. Verleen toegang tot 'any'
 
-## 6. Check wether you can access the MLflow UI
-Go to 'http://Public IP-Adress VM/5000' (example: http://52.137.9.17:5000/) url in your browser. 
+## 6. Check of je toegang hebt tot de de MLflow UI
+Navigeer naar 'http://Public IP-Adress VM/5000' (example: http://52.137.9.17:5000/) url in jouw browser. 
 
 # Train het model en registreer parameters/metrieken/artifacts van uitgevoerde runs
 
