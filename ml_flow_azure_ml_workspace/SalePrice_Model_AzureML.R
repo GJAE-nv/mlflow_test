@@ -30,11 +30,12 @@ Sys.setenv("PATH" = paste(Sys.getenv("PATH"), "/anaconda3/bin", sep = .Platform$
 
 ws <- load_workspace_from_config()
 mlflow_set_tracking_uri(ws)
-
-experiment_name <- "MLflow_R_test0"
-exp <- experiment(ws,experiment_name)
+mlflow_set_experiment("test1")
 
 
+
+#alternatively
+# existing_ws <- get_workspace(name = <workspace_name>, subscription_id = <subscription_id>, resource_group = <resource_group_name>)
 
 
 #load the data
@@ -86,6 +87,8 @@ test_y <- test[, "SalePrice"]
 
 alpha <- mlflow_param("alpha", 0.5, "numeric")
 lambda <- mlflow_param("lambda", 0.5, "numeric")
+
+
 
 
 with(mlflow_start_run(), {
