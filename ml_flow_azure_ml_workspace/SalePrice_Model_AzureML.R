@@ -29,8 +29,11 @@ mlflow::install_mlflow()
 Sys.setenv("PATH" = paste(Sys.getenv("PATH"), "/anaconda3/bin", sep = .Platform$path.sep))
 
 ws <- load_workspace_from_config()
-experiment_name <- "MLflow_R_test4"
+mlflow_set_tracking_uri(ws)
+
+experiment_name <- "MLflow_R_test0"
 exp <- experiment(ws,experiment_name)
+
 
 
 
@@ -85,7 +88,7 @@ alpha <- mlflow_param("alpha", 0.5, "numeric")
 lambda <- mlflow_param("lambda", 0.5, "numeric")
 
 
-with(mlflow_start_run(experiment_id = exp), {
+with(mlflow_start_run(), {
   
   model <- glmnet(train_x, train_y, alpha = alpha, lambda = lambda, family= "gaussian", standardize = FALSE)
   predictor <- crate(~ glmnet::predict.glmnet(!!model, as.matrix(.x)), !!model)
