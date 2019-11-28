@@ -1,0 +1,10 @@
+name: Project_test
+
+conda_env: conda.yaml
+
+entry_points:
+  main:
+    parameters:
+      alpha: float
+      l1_ratio: {type: float, default: 0.1}
+    command: "python Houses_Model.py"
