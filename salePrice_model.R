@@ -7,21 +7,20 @@ install.packages("reticulate")
 library(mlflow)
 library(glmnet)
 library(carrier)
-library(data.table)
 library(Matrix)
 library(reticulate)
 
 mlflow::install_mlflow()
 
-Sys.setenv("PATH" = paste(Sys.getenv("PATH"), "/anaconda3/bin", sep = .Platform$path.sep))
-
-mlflow_set_tracking_uri("http://localhost:5000")
-
+mlflow_set_tracking_uri("http://127.0.0.1:5000")
 
 #load the data
 
-setwd("/Users/Julie.Vranken/Desktop/Data Science/MLflow_Houses")
+setwd("/Users/julievranken/Documents/GitHub/mlflow_test")
+
 data <- read.csv("Train.csv")
+
+
 
 
 #Clean the data

@@ -1,0 +1,4 @@
+artifact_location: /Users/julievranken/Documents/GitHub/mlflow_test/mlruns/1
+experiment_id: '1'
+lifecycle_stage: active
+name: MLflow_Houses
