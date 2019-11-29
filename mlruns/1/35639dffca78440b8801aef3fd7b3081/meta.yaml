@@ -1,0 +1,15 @@
+artifact_uri: /Users/julievranken/Documents/GitHub/mlflow_test/mlruns/1/35639dffca78440b8801aef3fd7b3081/artifacts
+end_time: 1575025632220
+entry_point_name: ''
+experiment_id: '1'
+lifecycle_stage: active
+name: ''
+run_id: 35639dffca78440b8801aef3fd7b3081
+run_uuid: 35639dffca78440b8801aef3fd7b3081
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1575025629897
+status: 3
+tags: []
+user_id: julievranken
