@@ -3,7 +3,7 @@
 In deze repository kan je informatie terugvinden betreffende het tracken & deployen van een ML model via het open source platform MLflow  op Azure. 
 
 Meer specifiek kan je een handleiding terugvinden betreffende volgende 3 toepassingen:
-  1. Hoe lokaal een een model trainen en runs lokaal loggen via MLflow. 
+  1. Hoe lokaal een een model trainen en runs lokaal loggen via MLflow (ml_flow_local)?
   1. Hoe een connectie maken tussen de MLflow library & een Azure Machine Learning Workspace (ml_flow_azure_ml_workspace)? 
   3. Hoe een mlflow server opzetten op een Azure Virtual Machine (VM) (ml_flow_azure_vm).?
   
