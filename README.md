@@ -31,6 +31,17 @@ Deze artifacten hebben we locaal nodig om nadien een model te creëren in de Azu
 
 Merk op dat we idealiter deze stap kunnen overslaan door rechtstreeks de artifacten in de Blob Storage te gebruiken in plaats van deze eerst lokaal binnen te halen. Dit is ons echter nog niet gelukt!
 
+## Python vs. R 
+
+De verschillende toepassingen zijn zowel uitgewerkt in Python als R. Hierbij ondervonden we dat de Pyton API momenteel meer uitgrebreid is dan de R API (dit is te verklaren door het feit dat MLflow oorspronkelijk eerst enkel uitgewerkt was voor Python, nadien is er een uitbreiding voor R bijgekomen. Het lijkt ons logisch dat deze in de toekomst ook nog verder evolueert). 
+
+Het gebruik van R in vergelijking met Python heeft de volgende beperkingen:
+- Het is ons nog niet gelukt om mlflow op Windows te gebruiken. Enkel gebruik makend van Mac OS x werkte het. 
+  Ook ander gebruikers ondervinden dit zelfde probleem (https://github.com/mlflow/mlflow/issues/1009). 
+  Hopelijk is dit in de toekomst opgelost. 
+- De R API bevat geen connectie tussen MLflow en de Machine Learning Workspace in Azure (voor Python is dit wel het geval).
+  Het is echter wel mogelijk om R in combinatie met the Azure ML workspace te gebruiken, maar dit staat dan los van het MLflow concept.   (zie https://docs.microsoft.com/en-us/azure/machine-learning/service/tutorial-1st-r-experiment) 
+
 Enjoy!
 --------------------------------------------------------------
 Julie & Gertjan 
