@@ -33,14 +33,14 @@ Merk op dat we idealiter deze stap kunnen overslaan door rechtstreeks de artifac
 
 ## Python vs. R 
 
-The different examples are both documented in Python and R.
-However the Python API is more comprehensive than the R API. More precisely: 
-      - I did not manage to use mlflow on Windows. However, when switchen to Mac OS X it did work. 
-        Also other users experience the same issue (https://github.com/mlflow/mlflow/issues/1009).
-        Hopefully in the future this will be fixed. 
-      - The R api does not include a connection between MLflow and the Azure machine learning workspace. 
-        However, it is possible to use R in combination with the Azure ML workspace, but this does has nothing to do with MLflow.
-        (see https://docs.microsoft.com/en-us/azure/machine-learning/service/tutorial-1st-r-experiment) 
+De verschillende toepassingen zijn zowel uitgewerkt in Python als R. Hierbij ondervonden we dat de Pyton API momenteel meer uitgrebreid is dan de R API (dit is te verklaren door het feit dat MLflow oorspronkelijk eerst enkel uitgewerkt was voor Python, nadien is er een uitbreiding voor R bijgekomen. Het lijkt ons logisch dat deze in de toekomst ook nog verder evolueert). 
+
+Het gebruik van R in vergelijking met Python heeft de volgende beperkingen:
+- Het is ons nog niet gelukt om mlflow op Windows te gebruiken. Enkel gebruik makend van Mac OS x werkte het. 
+  Ook ander gebruikers ondervinden dit zelfde probleem (https://github.com/mlflow/mlflow/issues/1009). 
+  Hopelijk is dit in de toekomst opgelost. 
+- De R API bevat geen connectie tussen MLflow en de Machine Learning Workspace in Azure (voor Python is dit wel het geval).
+  Het is echter wel mogelijk om R in combinatie met the Azure ML workspace te gebruiken, maar dit staat dan los van het MLflow concept.   (zie https://docs.microsoft.com/en-us/azure/machine-learning/service/tutorial-1st-r-experiment) 
 
 Enjoy!
 --------------------------------------------------------------
