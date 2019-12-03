@@ -1,3 +1,7 @@
+# Algemene opmerking 
+
+Deze README is uitgewerkt in Python. De R code kan teruggevonden worden in het corresponderende R script in deze repository. 
+
 # Hoe MLflow op te zetten op een Virtual Machine 
 
 ## 1. Creëer een VM op Azure met de volgende specificaties: 
