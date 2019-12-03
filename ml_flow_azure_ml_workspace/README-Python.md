@@ -1,3 +1,9 @@
+# Algemene opmerking
+
+De R API bevat geen connectie tussen MLflow en de Machine Learning Workspace in Azure (voor Python is dit wel het geval). Het is echter wel mogelijk om R in combinatie met the Azure ML workspace te gebruiken, maar dit staat dan los van het MLflow concept. (zie https://docs.microsoft.com/en-us/azure/machine-learning/service/tutorial-1st-r-experiment). 
+
+In deze repository hebben we dan ook enkel het voorbeeld in Python uitgewerkt.
+
 # Creëer een Azure ML Workspace
 
 Allereest dient er een Azure Machine Learning Workspace aangemaakt worden in Azure. Indien je deze creërt, wordt er automatisch een BLOB Storage aangemaakt waarin de artifacts van uitgevoerde runs worden bijgehouden. 
